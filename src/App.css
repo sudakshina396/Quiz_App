@@ -1,0 +1,143 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff5e78, #ff9f43);
+  min-height: 100vh;
+}
+
+
+.quiz-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.quiz-title {
+  text-align: center;
+  color: #ff5e78;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.quiz-input,
+.quiz-select {
+  border: 2px solid #ff9f43 !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  transition: 0.3s ease;
+}
+
+.quiz-input:focus,
+.quiz-select:focus {
+  border-color: #ff5e78 !important;
+  box-shadow: 0 0 10px rgba(255, 94, 120, 0.4) !important;
+}
+
+
+.quiz-btn {
+  background: linear-gradient(45deg, #ff5e78, #ff9f43) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.quiz-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 94, 120, 0.4);
+}
+
+
+.option-btn {
+  background: white !important;
+  border: 2px solid #ff9f43 !important;
+  color: #333 !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.option-btn:hover {
+  background: linear-gradient(135deg, #ff5e78, #ff9f43) !important;
+  color: white !important;
+  transform: scale(1.03);
+}
+
+
+.timer {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5e78;
+  text-align: center;
+}
+
+
+.score {
+  color: #ff5e78;
+  font-weight: bold;
+}
+
+
+.progress {
+  height: 22px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  background-color: #eee !important;
+}
+
+.progress-bar {
+  background: linear-gradient(45deg, #ff5e78, #ff9f43) !important;
+  transition: width 0.4s ease;
+}
+
+
+.leaderboard {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff5f5;
+}
+
+.leaderboard-item {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.leaderboard-item:hover {
+  background: #ffe0d6;
+  transform: translateX(5px);
+}
+
+
+label {
+  font-weight: 600;
+  color: #444;
+}
+
+
+@media (max-width: 768px) {
+  .quiz-container {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .quiz-btn,
+  .option-btn {
+    width: 100%;
+  }
+}
